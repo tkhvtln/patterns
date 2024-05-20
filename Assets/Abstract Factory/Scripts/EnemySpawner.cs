@@ -19,8 +19,8 @@ namespace SpawnerAbstractFactory
 
         private void Start()
         {
-            _buttonAir.onClick.AddListener(() => SpawnEnemy("air"));
-            _buttonGround.onClick.AddListener(() => SpawnEnemy("ground"));
+            _buttonAir.onClick.AddListener(() => SpawnEnemy("Air"));
+            _buttonGround.onClick.AddListener(() => SpawnEnemy("Ground"));
         }
 
         private void SpawnEnemy(string name)
@@ -36,10 +36,10 @@ namespace SpawnerAbstractFactory
 
             switch (name)
             {
-                case "air":
+                case "Air":
                     enemyObject = selectedFactory.CreateAirEnemy();
                     break;
-                case "ground":
+                case "Ground":
                     enemyObject = selectedFactory.CreateGroundEnemy();
                     break;
             }

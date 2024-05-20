@@ -29,12 +29,12 @@ public class FuturisticEnemyFactory : MonoBehaviour, IEnemyFactory
 
     public GameObject CreateAirEnemy()
     {
-        return InstantiateEnemy("air");
+        return InstantiateEnemy("Air");
     }
 
     public GameObject CreateGroundEnemy()
     {
-        return InstantiateEnemy("ground");
+        return InstantiateEnemy("Ground");
     }
 
     private GameObject InstantiateEnemy(string enemyType)

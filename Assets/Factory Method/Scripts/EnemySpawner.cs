@@ -14,14 +14,16 @@ namespace SpawnerFactoryMethod
 
         private void Start()
         {
-            _buttonElf.onClick.AddListener(() => SpawnEnemy("elf"));
-            _buttonOrk.onClick.AddListener(() => SpawnEnemy("ork"));
+            _buttonElf.onClick.AddListener(() => SpawnEnemy("Elf"));
+            _buttonOrk.onClick.AddListener(() => SpawnEnemy("Ork"));
         }
 
         private void SpawnEnemy(string enemyType)
         {
             Enemy enemy = _enemyFactory.CreateEnemy(enemyType);
-            enemy.Attack();
+
+            if (enemy != null)
+                enemy.Attack();
         }
     }
 }

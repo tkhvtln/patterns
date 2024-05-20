@@ -13,14 +13,14 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        _buttonPatrol.onClick.AddListener(() => StartPatrol());
-        _buttonAttack.onClick.AddListener(() => StartAttack());
-
         _states = new Dictionary<string, IState>()
         {
             { "Patrol", new PatrolState(this) },
             { "Attack", new AttackState(this) }
         };
+
+        _buttonPatrol.onClick.AddListener(() => StartPatrol());
+        _buttonAttack.onClick.AddListener(() => StartAttack());
 
         SetState("Patrol");
     }

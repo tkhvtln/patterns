@@ -2090,9 +2090,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyList:
-  - name: air
+  - name: Air
     prefab: {fileID: 3864452518299695611, guid: 0719ecfe2c7c4014c8b53bc428cedbec, type: 3}
-  - name: ground
+  - name: Ground
     prefab: {fileID: 542138911478075590, guid: 23b409e0fb121e042b9790c4887a3060, type: 3}
 --- !u!114 &1939198000
 MonoBehaviour:
@@ -2107,9 +2107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyList:
-  - name: air
+  - name: Air
     prefab: {fileID: 2560785226909223300, guid: 365893823f4865b48bc35731407203b8, type: 3}
-  - name: ground
+  - name: Ground
     prefab: {fileID: 8866652887451342749, guid: cbea29b512b152e4fa91069dfc72498a, type: 3}
 --- !u!1 &2026614861
 GameObject:
