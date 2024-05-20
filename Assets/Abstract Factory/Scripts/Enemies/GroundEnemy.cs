@@ -5,6 +5,6 @@ public class GroundEnemy : Enemy
 {
     public override void Attack()
     {
-        Debug.Log("Наземный враг атакует!");
+        Debug.Log("The ground enemy is attacking!");
     }
 }

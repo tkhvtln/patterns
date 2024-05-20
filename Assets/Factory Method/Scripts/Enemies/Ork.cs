@@ -5,6 +5,6 @@ public class Ork : Enemy
 {
     public override void Attack()
     {
-        Debug.Log("Орк атакует!");
+        Debug.Log("The orc is attacking!");
     }
 }
